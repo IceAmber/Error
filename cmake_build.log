@@ -1,0 +1,186 @@
+[32;01m * [39;49;00mPackage:    dev-util/cmake-3.7.2
+[32;01m * [39;49;00mRepository: gentoo
+[32;01m * [39;49;00mMaintainer: kde@gentoo.org
+[32;01m * [39;49;00mUSE:        abi_x86_64 amd64 elibc_glibc kernel_linux ncurses userland_GNU
+[32;01m * [39;49;00mFEATURES:   preserve-libs sandbox userpriv usersandbox
+>>> Unpacking source...
+>>> Unpacking cmake-3.7.2.tar.gz to /var/tmp/portage/dev-util/cmake-3.7.2/work
+>>> Source unpacked in /var/tmp/portage/dev-util/cmake-3.7.2/work
+>>> Preparing source in /var/tmp/portage/dev-util/cmake-3.7.2/work/cmake-3.7.2 ...
+ [32;01m*[0m Applying cmake-3.4.0_rc1-darwin-bundle.patch ...
+[A[96C [34;01m[ [32;01mok[34;01m ][0m
+ [32;01m*[0m Applying cmake-3.0.0-prefix-dirs.patch ...
+[A[96C [34;01m[ [32;01mok[34;01m ][0m
+ [32;01m*[0m Applying cmake-3.1.0-darwin-isysroot.patch ...
+[A[96C [34;01m[ [32;01mok[34;01m ][0m
+ [32;01m*[0m Applying cmake-2.8.12.1-FindImageMagick.patch ...
+[A[96C [34;01m[ [32;01mok[34;01m ][0m
+ [32;01m*[0m Applying cmake-3.0.0-FindBLAS.patch ...
+[A[96C [34;01m[ [32;01mok[34;01m ][0m
+ [32;01m*[0m Applying cmake-3.0.0-FindBoost-python.patch ...
+[A[96C [34;01m[ [32;01mok[34;01m ][0m
+ [32;01m*[0m Applying cmake-3.0.2-FindLAPACK.patch ...
+[A[96C [34;01m[ [32;01mok[34;01m ][0m
+ [32;01m*[0m Applying cmake-3.5.2-FindQt4.patch ...
+[A[96C [34;01m[ [32;01mok[34;01m ][0m
+ [32;01m*[0m Applying cmake-2.8.10.2-FindPythonLibs.patch ...
+[A[96C [34;01m[ [32;01mok[34;01m ][0m
+ [32;01m*[0m Applying cmake-3.1.0-FindPythonInterp.patch ...
+[A[96C [34;01m[ [32;01mok[34;01m ][0m
+>>> Source prepared.
+>>> Configuring source in /var/tmp/portage/dev-util/cmake-3.7.2/work/cmake-3.7.2 ...
+>>> Working in BUILD_DIR: "/var/tmp/portage/dev-util/cmake-3.7.2/work/cmake-3.7.2_build"
+cmake -C /var/tmp/portage/dev-util/cmake-3.7.2/work/cmake-3.7.2_build/gentoo_common_config.cmake -G Unix Makefiles -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_USE_SYSTEM_LIBRARIES=ON -DCMAKE_USE_SYSTEM_LIBRARY_JSONCPP=no -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_DOC_DIR=/share/doc/cmake-3.7.2 -DCMAKE_MAN_DIR=/share/man -DCMAKE_DATA_DIR=/share/cmake -DSPHINX_MAN=no -DSPHINX_HTML=no -DBUILD_CursesDialog=yes -DCMAKE_BUILD_TYPE=Gentoo -DCMAKE_USER_MAKE_RULES_OVERRIDE=/var/tmp/portage/dev-util/cmake-3.7.2/work/cmake-3.7.2_build/gentoo_rules.cmake -DCMAKE_TOOLCHAIN_FILE=/var/tmp/portage/dev-util/cmake-3.7.2/work/cmake-3.7.2_build/gentoo_toolchain.cmake  /var/tmp/portage/dev-util/cmake-3.7.2/work/cmake-3.7.2
+loading initial cache file /var/tmp/portage/dev-util/cmake-3.7.2/work/cmake-3.7.2_build/gentoo_common_config.cmake
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/x86_64-pc-linux-gnu-gcc
+-- Check for working C compiler: /usr/bin/x86_64-pc-linux-gnu-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/x86_64-pc-linux-gnu-g++
+-- Check for working CXX compiler: /usr/bin/x86_64-pc-linux-gnu-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Checking if compiler supports C11 _Thread_local
+-- Checking if compiler supports C11 _Thread_local - yes
+-- Checking if compiler supports C++14 cstdio
+-- Checking if compiler supports C++14 cstdio - yes
+-- Checking if compiler supports C++ auto_ptr
+-- Checking if compiler supports C++ auto_ptr - no
+-- Checking if compiler supports C++ make_unique
+-- Checking if compiler supports C++ make_unique - yes
+-- Checking if compiler supports C++ nullptr
+-- Checking if compiler supports C++ nullptr - yes
+-- Checking if compiler supports C++ override
+-- Checking if compiler supports C++ override - yes
+-- Checking if compiler supports C++ unordered_map
+-- Checking if compiler supports C++ unordered_map - yes
+-- Checking if compiler supports C++ unordered_set
+-- Checking if compiler supports C++ unordered_set - yes
+-- Looking for unsetenv
+-- Looking for unsetenv - found
+-- Looking for environ
+-- Looking for environ - not found
+-- Checking whether header cstdio is available
+-- Checking whether header cstdio is available - yes
+-- Checking for Large File Support
+-- Checking for Large File Support - yes
+-- Checking whether C++ compiler has 'long long'
+-- Checking whether C++ compiler has 'long long' - yes
+-- Checking whether C++ compiler has '__int64'
+-- Checking whether C++ compiler has '__int64' - no
+-- Checking whether wstring is available
+-- Checking whether wstring is available - yes
+-- Checking if istream supports long long
+-- Checking if istream supports long long - yes
+-- Checking if ostream supports long long
+-- Checking if ostream supports long long - yes
+-- Checking whether C compiler has ptrdiff_t in stddef.h
+-- Checking whether C compiler has ptrdiff_t in stddef.h - yes
+-- Checking whether C compiler has ssize_t in unistd.h
+-- Checking whether C compiler has ssize_t in unistd.h - yes
+-- Checking whether CXX compiler has setenv
+-- Checking whether CXX compiler has setenv - yes
+-- Checking whether CXX compiler has unsetenv
+-- Checking whether CXX compiler has unsetenv - yes
+-- Checking whether CXX compiler has environ in stdlib.h
+-- Checking whether CXX compiler has environ in stdlib.h - no
+-- Checking whether CXX compiler has utimes
+-- Checking whether CXX compiler has utimes - yes
+-- Checking whether CXX compiler has utimensat
+-- Checking whether CXX compiler has utimensat - yes
+-- Checking whether CXX compiler struct stat has st_mtim member
+-- Checking whether CXX compiler struct stat has st_mtim member - yes
+-- Checking whether CXX compiler struct stat has st_mtimespec member
+-- Checking whether CXX compiler struct stat has st_mtimespec member - no
+-- Looking for include files sys/types.h, ifaddrs.h
+-- Looking for include files sys/types.h, ifaddrs.h - found
+-- Checking whether CXX compiler has rlimit64
+-- Checking whether CXX compiler has rlimit64 - yes
+-- Checking whether CXX compiler has atol
+-- Checking whether CXX compiler has atol - yes
+-- Checking whether CXX compiler has atoll
+-- Checking whether CXX compiler has atoll - yes
+-- Checking whether CXX compiler has _atoi64
+-- Checking whether CXX compiler has _atoi64 - no
+-- Looking for C++ include execinfo.h
+-- Looking for C++ include execinfo.h - found
+-- Checking whether backtrace works with this C++ compiler
+-- Checking whether backtrace works with this C++ compiler - yes
+-- Looking for C++ include dlfcn.h
+-- Looking for C++ include dlfcn.h - found
+-- Checking whether dladdr works with this C++ compiler
+-- Checking whether dladdr works with this C++ compiler - yes
+-- Looking for C++ include cxxabi.h
+-- Looking for C++ include cxxabi.h - found
+-- Checking whether cxxabi works with this C++ compiler
+-- Checking whether cxxabi works with this C++ compiler - yes
+-- Checking whether CXX compiler has getloadavg
+-- Checking whether CXX compiler has getloadavg - yes
+-- Checking whether <ext/stdio_filebuf.h> is available
+-- Checking whether <ext/stdio_filebuf.h> is available - yes
+-- Using system-installed BZIP2
+-- Using system-installed CURL
+-- Using system-installed EXPAT
+-- Using system-installed FORM
+-- Using system-installed LIBARCHIVE
+-- Using system-installed LIBLZMA
+-- Using system-installed LIBUV
+-- Using system-installed ZLIB
+-- Found ZLIB: /usr/lib64/libz.so (found version "1.2.11") 
+-- Found CURL: /usr/lib64/libcurl.so (found version "7.53.0") 
+-- Found BZip2: /usr/lib64/libbz2.so (found version "1.0.6") 
+-- Looking for BZ2_bzCompressInit
+-- Looking for BZ2_bzCompressInit - found
+-- Looking for lzma_auto_decoder in /usr/lib64/liblzma.so
+-- Looking for lzma_auto_decoder in /usr/lib64/liblzma.so - found
+-- Looking for lzma_easy_encoder in /usr/lib64/liblzma.so
+-- Looking for lzma_easy_encoder in /usr/lib64/liblzma.so - found
+-- Looking for lzma_lzma_preset in /usr/lib64/liblzma.so
+-- Looking for lzma_lzma_preset in /usr/lib64/liblzma.so - found
+-- Found LibLZMA: /usr/include (found version "5.2.3") 
+-- Found LibArchive: /usr/lib64/libarchive.so (found suitable version "3.3.1", minimum required is "3.0.0") 
+-- Found EXPAT: /usr/lib64/libexpat.so (found version "2.2.0") 
+-- Found LibUV: /usr/lib64/libuv.so (found suitable version "1.10.2", minimum required is "1.0.0") 
+-- Looking for cbreak in /usr/lib64/libncurses.so
+-- Looking for cbreak in /usr/lib64/libncurses.so - found
+-- Looking for elf.h
+-- Looking for elf.h - found
+-- Performing Test QT4_WORKS
+-- Performing Test QT4_WORKS - Success
+-- Performing Test run_pic_test
+-- Performing Test run_pic_test - Success
+-- Performing Test run_inlines_hidden_test
+-- Performing Test run_inlines_hidden_test - Success
+CMake Error at /usr/lib64/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake:9 (message):
+  Failed to find "GL/gl.h" in "/usr/include/libdrm".
+Call Stack (most recent call first):
+  /usr/lib64/cmake/Qt5Gui/Qt5GuiConfig.cmake:158 (include)
+  /usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake:99 (find_package)
+  Tests/CMakeLists.txt:1253 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/var/tmp/portage/dev-util/cmake-3.7.2/work/cmake-3.7.2_build/CMakeFiles/CMakeOutput.log".
+See also "/var/tmp/portage/dev-util/cmake-3.7.2/work/cmake-3.7.2_build/CMakeFiles/CMakeError.log".
+ [31;01m*[0m ERROR: dev-util/cmake-3.7.2::gentoo failed (configure phase):
+ [31;01m*[0m   cmake failed
+ [31;01m*[0m 
+ [31;01m*[0m Call stack:
+ [31;01m*[0m     ebuild.sh, line  115:  Called src_configure
+ [31;01m*[0m   environment, line 3326:  Called cmake-utils_src_configure
+ [31;01m*[0m   environment, line  970:  Called die
+ [31;01m*[0m The specific snippet of code:
+ [31;01m*[0m       "${CMAKE_BINARY}" "${cmakeargs[@]}" "${CMAKE_USE_DIR}" || die "cmake failed";
+ [31;01m*[0m 
+ [31;01m*[0m If you need support, post the output of `emerge --info '=dev-util/cmake-3.7.2::gentoo'`,
+ [31;01m*[0m the complete build log and the output of `emerge -pqv '=dev-util/cmake-3.7.2::gentoo'`.
+ [31;01m*[0m The complete build log is located at '/var/tmp/portage/dev-util/cmake-3.7.2/temp/build.log'.
+ [31;01m*[0m The ebuild environment file is located at '/var/tmp/portage/dev-util/cmake-3.7.2/temp/environment'.
+ [31;01m*[0m Working directory: '/var/tmp/portage/dev-util/cmake-3.7.2/work/cmake-3.7.2_build'
+ [31;01m*[0m S: '/var/tmp/portage/dev-util/cmake-3.7.2/work/cmake-3.7.2'
