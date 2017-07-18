@@ -1,0 +1,276 @@
+[32;01m * [39;49;00mPackage:    app-i18n/librime-1.2
+[32;01m * [39;49;00mRepository: gentoo
+[32;01m * [39;49;00mMaintainer: dlan@gentoo.org cjk@gentoo.org
+[32;01m * [39;49;00mUpstream:   chen.sst@gmail.com https://code.google.com/p/rimeime/issues/list
+[32;01m * [39;49;00mUSE:        abi_x86_64 amd64 elibc_glibc kernel_linux userland_GNU
+[32;01m * [39;49;00mFEATURES:   preserve-libs sandbox userpriv usersandbox
+>>> Unpacking source...
+>>> Unpacking librime-1.2.tar.gz to /var/tmp/portage/app-i18n/librime-1.2/work
+>>> Source unpacked in /var/tmp/portage/app-i18n/librime-1.2/work
+>>> Preparing source in /var/tmp/portage/app-i18n/librime-1.2/work/librime ...
+ [32;01m*[0m Applying librime-1.2-BOOST_NO_SCOPED_ENUMS.patch ...
+[A[96C [34;01m[ [32;01mok[34;01m ][0m
+ [32;01m*[0m Applying librime-1.1-gcc53613.patch ...
+[A[96C [34;01m[ [32;01mok[34;01m ][0m
+>>> Source prepared.
+>>> Configuring source in /var/tmp/portage/app-i18n/librime-1.2/work/librime ...
+>>> Working in BUILD_DIR: "/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build"
+cmake --no-warn-unused-cli -C /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/gentoo_common_config.cmake -G Unix Makefiles -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_STATIC=OFF -DBUILD_DATA=OFF -DBUILD_SEPARATE_LIBS=OFF -DBUILD_TEST=OFF -DLIB_INSTALL_DIR=/usr/lib64 -DCMAKE_BUILD_TYPE=Gentoo -DCMAKE_INSTALL_DO_STRIP=OFF -DCMAKE_USER_MAKE_RULES_OVERRIDE=/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/gentoo_rules.cmake -DCMAKE_TOOLCHAIN_FILE=/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/gentoo_toolchain.cmake  /var/tmp/portage/app-i18n/librime-1.2/work/librime
+Not searching for unused variables given on the command line.
+loading initial cache file /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/gentoo_common_config.cmake
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/x86_64-pc-linux-gnu-gcc
+-- Check for working C compiler: /usr/bin/x86_64-pc-linux-gnu-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/x86_64-pc-linux-gnu-g++
+-- Check for working CXX compiler: /usr/bin/x86_64-pc-linux-gnu-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Boost version: 1.62.0
+-- Found the following Boost libraries:
+--   filesystem
+--   regex
+--   signals
+--   system
+-- Found glog: /usr/lib64/libglog.so
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found yaml-cpp: /usr/lib64/libyaml-cpp.so
+-- Found ZLIB: /usr/lib64/libz.so (found version "1.2.11") 
+-- Found kyotocabinet: /usr/lib64/libkyotocabinet.so
+-- Found marisa: /usr/lib64/libmarisa.so
+-- Found opencc: /usr/lib64/libopencc.so
+-- Found X11/keysym.h at /var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include
+-- <<< Gentoo configuration >>>
+Build type      Gentoo
+Install path    /usr
+Compiler flags:
+C               -march=native -O2 -pipe
+C++             -march=native -O2 -pipe
+Linker flags:
+Executable      -Wl,-O1 -Wl,--as-needed
+Module          -Wl,-O1 -Wl,--as-needed
+Shared          -Wl,-O1 -Wl,--as-needed
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build
+>>> Source configured.
+>>> Compiling source in /var/tmp/portage/app-i18n/librime-1.2/work/librime ...
+>>> Working in BUILD_DIR: "/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build"
+make -j8 VERBOSE=1 
+/usr/bin/cmake -H/var/tmp/portage/app-i18n/librime-1.2/work/librime -B/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/CMakeFiles /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build'
+make -f src/CMakeFiles/rime.dir/build.make src/CMakeFiles/rime.dir/depend
+make[2]: Entering directory '/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build'
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /var/tmp/portage/app-i18n/librime-1.2/work/librime /var/tmp/portage/app-i18n/librime-1.2/work/librime/src /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src/CMakeFiles/rime.dir/DependInfo.cmake --color=
+Dependee "/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src/CMakeFiles/rime.dir/DependInfo.cmake" is newer than depender "/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src/CMakeFiles/rime.dir/depend.internal".
+Dependee "/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src/CMakeFiles/rime.dir/depend.internal".
+[35m[1mScanning dependencies of target rime[0m
+make[2]: Leaving directory '/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build'
+make -f src/CMakeFiles/rime.dir/build.make src/CMakeFiles/rime.dir/build
+make[2]: Entering directory '/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build'
+[  1%] [32mBuilding CXX object src/CMakeFiles/rime.dir/candidate.cc.o[0m
+[  3%] [32mBuilding CXX object src/CMakeFiles/rime.dir/composition.cc.o[0m
+[  3%] [32mBuilding CXX object src/CMakeFiles/rime.dir/commit_history.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/candidate.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/candidate.cc
+[  4%] [32mBuilding CXX object src/CMakeFiles/rime.dir/config.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/commit_history.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/commit_history.cc
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/composition.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/composition.cc
+[  5%] [32mBuilding CXX object src/CMakeFiles/rime.dir/core_module.cc.o[0m
+[  6%] [32mBuilding CXX object src/CMakeFiles/rime.dir/context.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/config.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/config.cc
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/core_module.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/core_module.cc
+[  7%] [32mBuilding CXX object src/CMakeFiles/rime.dir/deployer.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/context.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/context.cc
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/deployer.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/deployer.cc
+[  8%] [32mBuilding CXX object src/CMakeFiles/rime.dir/engine.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/engine.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/engine.cc
+[  9%] [32mBuilding CXX object src/CMakeFiles/rime.dir/key_event.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/key_event.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/key_event.cc
+[ 10%] [32mBuilding CXX object src/CMakeFiles/rime.dir/key_table.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/key_table.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/key_table.cc
+[ 11%] [32mBuilding CXX object src/CMakeFiles/rime.dir/menu.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/menu.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/menu.cc
+[ 12%] [32mBuilding CXX object src/CMakeFiles/rime.dir/module.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/module.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/module.cc
+[ 13%] [32mBuilding CXX object src/CMakeFiles/rime.dir/registry.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/registry.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/registry.cc
+[ 14%] [32mBuilding CXX object src/CMakeFiles/rime.dir/rime_api.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/rime_api.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/rime_api.cc
+[ 15%] [32mBuilding CXX object src/CMakeFiles/rime.dir/schema.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/schema.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/schema.cc
+[ 16%] [32mBuilding CXX object src/CMakeFiles/rime.dir/segmentation.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/segmentation.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/segmentation.cc
+[ 17%] [32mBuilding CXX object src/CMakeFiles/rime.dir/service.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/service.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/service.cc
+[ 18%] [32mBuilding CXX object src/CMakeFiles/rime.dir/setup.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/setup.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/setup.cc
+[ 19%] [32mBuilding CXX object src/CMakeFiles/rime.dir/signature.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/signature.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/signature.cc
+[ 20%] [32mBuilding CXX object src/CMakeFiles/rime.dir/switcher.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/switcher.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/switcher.cc
+[ 21%] [32mBuilding CXX object src/CMakeFiles/rime.dir/ticket.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/ticket.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/ticket.cc
+[ 22%] [32mBuilding CXX object src/CMakeFiles/rime.dir/translation.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/translation.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/translation.cc
+[ 23%] [32mBuilding CXX object src/CMakeFiles/rime.dir/algo/algebra.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/algo/algebra.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/algo/algebra.cc
+[ 25%] [32mBuilding CXX object src/CMakeFiles/rime.dir/algo/calculus.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/algo/calculus.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/algo/calculus.cc
+[ 26%] [32mBuilding CXX object src/CMakeFiles/rime.dir/algo/encoder.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/algo/encoder.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/algo/encoder.cc
+[ 27%] [32mBuilding CXX object src/CMakeFiles/rime.dir/algo/syllabifier.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/algo/syllabifier.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/algo/syllabifier.cc
+[ 28%] [32mBuilding CXX object src/CMakeFiles/rime.dir/algo/utilities.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/algo/utilities.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/algo/utilities.cc
+[ 29%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/db.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/db.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/db.cc
+[ 30%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/db_utils.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/db_utils.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/db_utils.cc
+[ 31%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/dict_compiler.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/dict_compiler.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/dict_compiler.cc
+[ 32%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/dict_module.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/dict_module.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/dict_module.cc
+[ 33%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/dict_settings.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/dict_settings.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/dict_settings.cc
+[ 34%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/dictionary.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/dictionary.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/dictionary.cc
+[ 35%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/entry_collector.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/entry_collector.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/entry_collector.cc
+[ 36%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/mapped_file.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/mapped_file.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/mapped_file.cc
+[ 37%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/preset_vocabulary.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/preset_vocabulary.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/preset_vocabulary.cc
+[ 38%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/prism.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/prism.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/prism.cc
+[ 39%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/reverse_lookup_dictionary.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/reverse_lookup_dictionary.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/reverse_lookup_dictionary.cc
+[ 40%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/string_table.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/string_table.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/string_table.cc
+[ 41%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/table.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/table.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/table.cc
+[ 42%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/table_db.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/table_db.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/table_db.cc
+[ 43%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/text_db.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/text_db.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/text_db.cc
+[ 44%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/tree_db.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/tree_db.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/tree_db.cc
+[ 45%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/tsv.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/tsv.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/tsv.cc
+[ 46%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/user_db.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/user_db.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/user_db.cc
+[ 47%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/user_dictionary.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/user_dictionary.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/user_dictionary.cc
+[ 48%] [32mBuilding CXX object src/CMakeFiles/rime.dir/dict/vocabulary.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/dict/vocabulary.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/dict/vocabulary.cc
+[ 50%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/abc_segmentor.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/abc_segmentor.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/abc_segmentor.cc
+[ 51%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/affix_segmentor.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/affix_segmentor.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/affix_segmentor.cc
+[ 52%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/ascii_composer.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/ascii_composer.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/ascii_composer.cc
+[ 53%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/ascii_segmentor.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/ascii_segmentor.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/ascii_segmentor.cc
+[ 54%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/chord_composer.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/chord_composer.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/chord_composer.cc
+[ 55%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/cjk_minifier.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/cjk_minifier.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/cjk_minifier.cc
+[ 56%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/echo_translator.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/echo_translator.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/echo_translator.cc
+[ 57%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/editor.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/editor.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/editor.cc
+[ 58%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/fallback_segmentor.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/fallback_segmentor.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/fallback_segmentor.cc
+[ 59%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/filter_commons.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/filter_commons.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/filter_commons.cc
+[ 60%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/gears_module.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/gears_module.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/gears_module.cc
+[ 61%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/key_binder.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/key_binder.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/key_binder.cc
+[ 62%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/matcher.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/matcher.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/matcher.cc
+[ 63%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/memory.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/memory.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/memory.cc
+[ 64%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/navigator.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/navigator.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/navigator.cc
+[ 65%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/poet.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/poet.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/poet.cc
+[ 66%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/punctuator.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/punctuator.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/punctuator.cc
+[ 67%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/recognizer.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/recognizer.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/recognizer.cc
+[ 68%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/reverse_lookup_filter.cc.o[0m
+[ 69%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/reverse_lookup_translator.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/reverse_lookup_filter.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/reverse_lookup_filter.cc
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/reverse_lookup_translator.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/reverse_lookup_translator.cc
+[ 70%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/schema_list_translator.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/schema_list_translator.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/schema_list_translator.cc
+[ 71%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/script_translator.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/script_translator.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/script_translator.cc
+[ 72%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/selector.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/selector.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/selector.cc
+[ 73%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/shape.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/shape.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/shape.cc
+[ 75%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/simplifier.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/simplifier.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/simplifier.cc
+[ 76%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/speller.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/speller.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/speller.cc
+[ 77%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/switch_translator.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/switch_translator.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/switch_translator.cc
+[ 78%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/table_translator.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/table_translator.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/table_translator.cc
+[ 79%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/translator_commons.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/translator_commons.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/translator_commons.cc
+[ 80%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/uniquifier.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/uniquifier.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/uniquifier.cc
+[01m[K/var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/simplifier.cc:[m[K In member function ‘[01m[Kbool rime::Opencc::ConvertText(const string&, std::__cxx11::string*, bool*)[m[K’:
+[01m[K/var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/simplifier.cc:74:37:[m[K [01;31m[Kerror: [m[K‘[01m[KOPENCC_CONVERSION_LIST_CANDIDATES[m[K’ was not declared in this scope
+     opencc_set_conversion_mode(od_, OPENCC_CONVERSION_LIST_CANDIDATES);
+[01;32m[K                                     ^[m[K
+[01m[K/var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/simplifier.cc:74:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kopencc_set_conversion_mode[m[K’ was not declared in this scope
+     opencc_set_conversion_mode(od_, OPENCC_CONVERSION_LIST_CANDIDATES);
+[01;32m[K                                                                      ^[m[K
+[01m[K/var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/simplifier.cc:78:37:[m[K [01;31m[Kerror: [m[K‘[01m[KOPENCC_CONVERSION_FAST[m[K’ was not declared in this scope
+     opencc_set_conversion_mode(od_, OPENCC_CONVERSION_FAST);
+[01;32m[K                                     ^[m[K
+[01m[K/var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/simplifier.cc:78:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kopencc_set_conversion_mode[m[K’ was not declared in this scope
+     opencc_set_conversion_mode(od_, OPENCC_CONVERSION_FAST);
+[01;32m[K                                                           ^[m[K
+[01m[K/var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/simplifier.cc:80:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kopencc_convert[m[K’ was not declared in this scope
+   size_t converted = opencc_convert(od_, &inptr, &inlen, &outptr, &outlen);
+[01;32m[K                                                                          ^[m[K
+[ 81%] [32mBuilding CXX object src/CMakeFiles/rime.dir/gear/unity_table_encoder.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/gear/unity_table_encoder.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/gear/unity_table_encoder.cc
+[ 82%] [32mBuilding CXX object src/CMakeFiles/rime.dir/lever/custom_settings.cc.o[0m
+cd /var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build/src && /usr/bin/x86_64-pc-linux-gnu-g++   -DBOOST_NO_CXX11_SCOPED_ENUMS -DRIME_BUILD_SHARED_LIBS -DRIME_ENABLE_LOGGING -DRIME_EXPORTS -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/thirdparty/include -I/var/tmp/portage/app-i18n/librime-1.2/work/librime/include  -march=native -O2 -pipe -fPIC   -std=c++11 -o CMakeFiles/rime.dir/lever/custom_settings.cc.o -c /var/tmp/portage/app-i18n/librime-1.2/work/librime/src/lever/custom_settings.cc
+make[2]: *** [src/CMakeFiles/rime.dir/build.make:1767: src/CMakeFiles/rime.dir/gear/simplifier.cc.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: Leaving directory '/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build'
+make[1]: *** [CMakeFiles/Makefile2:118: src/CMakeFiles/rime.dir/all] Error 2
+make[1]: Leaving directory '/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build'
+make: *** [Makefile:128: all] Error 2
+ [31;01m*[0m ERROR: app-i18n/librime-1.2::gentoo failed (compile phase):
+ [31;01m*[0m   emake failed
+ [31;01m*[0m 
+ [31;01m*[0m If you need support, post the output of `emerge --info '=app-i18n/librime-1.2::gentoo'`,
+ [31;01m*[0m the complete build log and the output of `emerge -pqv '=app-i18n/librime-1.2::gentoo'`.
+ [31;01m*[0m The complete build log is located at '/var/tmp/portage/app-i18n/librime-1.2/temp/build.log'.
+ [31;01m*[0m The ebuild environment file is located at '/var/tmp/portage/app-i18n/librime-1.2/temp/environment'.
+ [31;01m*[0m Working directory: '/var/tmp/portage/app-i18n/librime-1.2/work/librime-1.2_build'
+ [31;01m*[0m S: '/var/tmp/portage/app-i18n/librime-1.2/work/librime'
