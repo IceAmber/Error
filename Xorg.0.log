@@ -1,36 +1,36 @@
-[    26.548] (--) Log file renamed from "/var/log/Xorg.pid-4753.log" to "/var/log/Xorg.0.log"
-[    26.548] 
+[    24.014] (--) Log file renamed from "/var/log/Xorg.pid-4754.log" to "/var/log/Xorg.0.log"
+[    24.014] 
 X.Org X Server 1.19.3
 Release Date: 2017-03-15
-[    26.548] X Protocol Version 11, Revision 0
-[    26.548] Build Operating System: Linux 4.9.34-gentoo x86_64 Gentoo
-[    26.548] Current Operating System: Linux localhost 4.12.5-gentoo #2 SMP Sat Aug 19 20:27:25 UTC 2017 x86_64
-[    26.548] Kernel command line: BOOT_IMAGE=/vmlinuz-4.12.5-gentoo root=/dev/mapper/vg0-root ro dolvm resume=/dev/sdb3
-[    26.548] Build Date: 08 July 2017  09:53:10AM
-[    26.548]  
-[    26.548] Current version of pixman: 0.34.0
-[    26.548] 	Before reporting problems, check http://wiki.x.org
+[    24.014] X Protocol Version 11, Revision 0
+[    24.014] Build Operating System: Linux 4.9.34-gentoo x86_64 Gentoo
+[    24.014] Current Operating System: Linux localhost 4.12.5-gentoo #10 SMP Sat Aug 26 13:15:20 UTC 2017 x86_64
+[    24.014] Kernel command line: BOOT_IMAGE=/vmlinuz-4.12.5-gentoo root=/dev/mapper/vg0-root ro dolvm resume=/dev/sdb3
+[    24.015] Build Date: 08 July 2017  09:53:10AM
+[    24.015]  
+[    24.015] Current version of pixman: 0.34.0
+[    24.015] 	Before reporting problems, check http://wiki.x.org
 	to make sure that you have the latest version.
-[    26.548] Markers: (--) probed, (**) from config file, (==) default setting,
+[    24.015] Markers: (--) probed, (**) from config file, (==) default setting,
 	(++) from command line, (!!) notice, (II) informational,
 	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
-[    26.548] (==) Log file: "/var/log/Xorg.0.log", Time: Sat Aug 19 22:41:53 2017
-[    26.566] (==) Using config file: "/etc/X11/xorg.conf"
-[    26.566] (==) Using config directory: "/etc/X11/xorg.conf.d"
-[    26.566] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
-[    26.614] (==) ServerLayout "X.org Configured"
-[    26.614] (**) |-->Screen "Screen0" (0)
-[    26.614] (**) |   |-->Monitor "Monitor0"
-[    26.615] (==) No device specified for screen "Screen0".
+[    24.015] (==) Log file: "/var/log/Xorg.0.log", Time: Sat Aug 26 22:49:17 2017
+[    24.034] (==) Using config file: "/etc/X11/xorg.conf"
+[    24.034] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    24.034] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    24.083] (==) ServerLayout "X.org Configured"
+[    24.083] (**) |-->Screen "Screen0" (0)
+[    24.083] (**) |   |-->Monitor "Monitor0"
+[    24.083] (==) No device specified for screen "Screen0".
 	Using the first device section listed.
-[    26.615] (**) |   |-->Device "radeon"
-[    26.615] (**) |-->Input Device "Mouse0"
-[    26.615] (**) |-->Input Device "Keyboard0"
-[    26.615] (==) Automatically adding devices
-[    26.615] (==) Automatically enabling devices
-[    26.615] (==) Automatically adding GPU devices
-[    26.615] (==) Max clients allowed: 256, resource mask: 0x1fffff
-[    26.690] (**) FontPath set to:
+[    24.083] (**) |   |-->Device "Device0"
+[    24.083] (**) |-->Input Device "Mouse0"
+[    24.083] (**) |-->Input Device "Keyboard0"
+[    24.083] (==) Automatically adding devices
+[    24.083] (==) Automatically enabling devices
+[    24.083] (==) Automatically adding GPU devices
+[    24.083] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    24.150] (**) FontPath set to:
 	/usr/share/fonts/misc/,
 	/usr/share/fonts/TTF/,
 	/usr/share/fonts/OTF/,
@@ -46,385 +46,416 @@ Release Date: 2017-03-15
 	/usr/share/fonts/Type1/,
 	/usr/share/fonts/100dpi/,
 	/usr/share/fonts/75dpi/
-[    26.690] (**) ModulePath set to "/usr/lib64/xorg/modules"
-[    26.690] (**) Extension "Composite" is enabled
-[    26.691] (WW) Hotplugging is on, devices using drivers 'kbd', 'mouse' or 'vmmouse' will be disabled.
-[    26.691] (WW) Disabling Mouse0
-[    26.691] (WW) Disabling Keyboard0
-[    26.691] (II) Loader magic: 0x80bc80
-[    26.691] (II) Module ABI versions:
-[    26.691] 	X.Org ANSI C Emulation: 0.4
-[    26.691] 	X.Org Video Driver: 23.0
-[    26.691] 	X.Org XInput driver : 24.1
-[    26.691] 	X.Org Server Extension : 10.0
-[    26.691] (II) xfree86: Adding drm device (/dev/dri/card0)
-[    26.692] (--) PCI:*(0:1:0:0) 1002:6759:1002:0000 rev 0, Mem @ 0xc0000000/268435456, 0xfea20000/131072, I/O @ 0x0000e000/256, BIOS @ 0x????????/131072
-[    26.692] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
-[    26.692] (II) LoadModule: "glx"
-[    26.723] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
-[    26.858] (II) Module glx: vendor="X.Org Foundation"
-[    26.858] 	compiled for 1.19.3, module version = 1.0.0
-[    26.858] 	ABI class: X.Org Server Extension, version 10.0
-[    26.858] (II) LoadModule: "radeon"
-[    26.859] (II) Loading /usr/lib64/xorg/modules/drivers/radeon_drv.so
-[    26.887] (II) Module radeon: vendor="X.Org Foundation"
-[    26.887] 	compiled for 1.19.3, module version = 7.9.0
-[    26.887] 	Module class: X.Org Video Driver
-[    26.887] 	ABI class: X.Org Video Driver, version 23.0
-[    26.887] (II) RADEON: Driver for ATI/AMD Radeon chipsets:
-	ATI Radeon Mobility X600 (M24), ATI FireMV 2400,
-	ATI Radeon Mobility X300 (M24), ATI FireGL M24 GL,
-	ATI Radeon X600 (RV380), ATI FireGL V3200 (RV380),
-	ATI Radeon IGP320 (A3), ATI Radeon IGP330/340/350 (A4),
-	ATI Radeon 9500, ATI Radeon 9600TX, ATI FireGL Z1, ATI Radeon 9800SE,
-	ATI Radeon 9800, ATI FireGL X2, ATI Radeon 9600, ATI Radeon 9600SE,
-	ATI Radeon 9600XT, ATI FireGL T2, ATI Radeon 9650, ATI FireGL RV360,
-	ATI Radeon 7000 IGP (A4+), ATI Radeon 8500 AIW,
-	ATI Radeon IGP320M (U1), ATI Radeon IGP330M/340M/350M (U2),
-	ATI Radeon Mobility 7000 IGP, ATI Radeon 9000/PRO, ATI Radeon 9000,
-	ATI Radeon X800 (R420), ATI Radeon X800PRO (R420),
-	ATI Radeon X800SE (R420), ATI FireGL X3 (R420),
-	ATI Radeon Mobility 9800 (M18), ATI Radeon X800 SE (R420),
-	ATI Radeon X800XT (R420), ATI Radeon X800 VE (R420),
-	ATI Radeon X850 (R480), ATI Radeon X850 XT (R480),
-	ATI Radeon X850 SE (R480), ATI Radeon X850 PRO (R480),
-	ATI Radeon X850 XT PE (R480), ATI Radeon Mobility M7,
-	ATI Mobility FireGL 7800 M7, ATI Radeon Mobility M6,
-	ATI FireGL Mobility 9000 (M9), ATI Radeon Mobility 9000 (M9),
-	ATI Radeon 9700 Pro, ATI Radeon 9700/9500Pro, ATI FireGL X1,
-	ATI Radeon 9800PRO, ATI Radeon 9800XT,
-	ATI Radeon Mobility 9600/9700 (M10/M11),
-	ATI Radeon Mobility 9600 (M10), ATI Radeon Mobility 9600 (M11),
-	ATI FireGL Mobility T2 (M10), ATI FireGL Mobility T2e (M11),
-	ATI Radeon, ATI FireGL 8700/8800, ATI Radeon 8500, ATI Radeon 9100,
-	ATI Radeon 7500, ATI Radeon VE/7000, ATI ES1000,
-	ATI Radeon Mobility X300 (M22), ATI Radeon Mobility X600 SE (M24C),
-	ATI FireGL M22 GL, ATI Radeon X800 (R423), ATI Radeon X800PRO (R423),
-	ATI Radeon X800LE (R423), ATI Radeon X800SE (R423),
-	ATI Radeon X800 XTP (R430), ATI Radeon X800 XL (R430),
-	ATI Radeon X800 SE (R430), ATI Radeon X800 (R430),
-	ATI FireGL V7100 (R423), ATI FireGL V5100 (R423),
-	ATI FireGL unknown (R423), ATI Mobility FireGL V5000 (M26),
-	ATI Mobility Radeon X700 XL (M26), ATI Mobility Radeon X700 (M26),
-	ATI Radeon X550XTX, ATI Radeon 9100 IGP (A5),
-	ATI Radeon Mobility 9100 IGP (U3), ATI Radeon XPRESS 200,
-	ATI Radeon XPRESS 200M, ATI Radeon 9250, ATI Radeon 9200,
-	ATI Radeon 9200SE, ATI FireMV 2200, ATI Radeon X300 (RV370),
-	ATI Radeon X600 (RV370), ATI Radeon X550 (RV370),
-	ATI FireGL V3100 (RV370), ATI FireMV 2200 PCIE (RV370),
-	ATI Radeon Mobility 9200 (M9+), ATI Mobility Radeon X800 XT (M28),
-	ATI Mobility FireGL V5100 (M28), ATI Mobility Radeon X800 (M28),
-	ATI Radeon X850, ATI unknown Radeon / FireGL (R480),
-	ATI Radeon X800XT (R423), ATI FireGL V5000 (RV410),
-	ATI Radeon X700 XT (RV410), ATI Radeon X700 PRO (RV410),
-	ATI Radeon X700 SE (RV410), ATI Radeon X700 (RV410),
-	ATI Radeon X1800, ATI Mobility Radeon X1800 XT,
-	ATI Mobility Radeon X1800, ATI Mobility FireGL V7200,
-	ATI FireGL V7200, ATI FireGL V5300, ATI Mobility FireGL V7100,
-	ATI FireGL V7300, ATI FireGL V7350, ATI Radeon X1600, ATI RV505,
-	ATI Radeon X1300/X1550, ATI Radeon X1550, ATI M54-GL,
-	ATI Mobility Radeon X1400, ATI Radeon X1550 64-bit,
-	ATI Mobility Radeon X1300, ATI Radeon X1300, ATI FireGL V3300,
-	ATI FireGL V3350, ATI Mobility Radeon X1450,
-	ATI Mobility Radeon X2300, ATI Mobility Radeon X1350,
-	ATI FireMV 2250, ATI Radeon X1650, ATI Mobility FireGL V5200,
-	ATI Mobility Radeon X1600, ATI Radeon X1300 XT/X1600 Pro,
-	ATI FireGL V3400, ATI Mobility FireGL V5250,
-	ATI Mobility Radeon X1700, ATI Mobility Radeon X1700 XT,
-	ATI FireGL V5200, ATI Radeon X2300HD, ATI Mobility Radeon HD 2300,
-	ATI Radeon X1950, ATI Radeon X1900, ATI AMD Stream Processor,
-	ATI RV560, ATI Mobility Radeon X1900, ATI Radeon X1950 GT, ATI RV570,
-	ATI FireGL V7400, ATI Radeon 9100 PRO IGP,
-	ATI Radeon Mobility 9200 IGP, ATI Radeon X1200, ATI RS740,
-	ATI RS740M, ATI Radeon HD 2900 XT, ATI Radeon HD 2900 Pro,
-	ATI Radeon HD 2900 GT, ATI FireGL V8650, ATI FireGL V8600,
-	ATI FireGL V7600, ATI Radeon 4800 Series, ATI Radeon HD 4870 x2,
-	ATI Radeon HD 4850 x2, ATI FirePro V8750 (FireGL),
-	ATI FirePro V7760 (FireGL), ATI Mobility RADEON HD 4850,
-	ATI Mobility RADEON HD 4850 X2, ATI FirePro RV770,
-	AMD FireStream 9270, AMD FireStream 9250, ATI FirePro V8700 (FireGL),
-	ATI Mobility RADEON HD 4870, ATI Mobility RADEON M98,
-	ATI FirePro M7750, ATI M98, ATI Mobility Radeon HD 4650,
-	ATI Radeon RV730 (AGP), ATI Mobility Radeon HD 4670,
-	ATI FirePro M5750, ATI RV730XT [Radeon HD 4670], ATI RADEON E4600,
-	ATI Radeon HD 4600 Series, ATI RV730 PRO [Radeon HD 4650],
-	ATI FirePro V7750 (FireGL), ATI FirePro V5700 (FireGL),
-	ATI FirePro V3750 (FireGL), ATI Mobility Radeon HD 4830,
-	ATI Mobility Radeon HD 4850, ATI FirePro M7740, ATI RV740,
-	ATI Radeon HD 4770, ATI Radeon HD 4700 Series, ATI RV610,
-	ATI Radeon HD 2400 XT, ATI Radeon HD 2400 Pro,
-	ATI Radeon HD 2400 PRO AGP, ATI FireGL V4000, ATI Radeon HD 2350,
-	ATI Mobility Radeon HD 2400 XT, ATI Mobility Radeon HD 2400,
-	ATI RADEON E2400, ATI FireMV 2260, ATI RV670, ATI Radeon HD3870,
-	ATI Mobility Radeon HD 3850, ATI Radeon HD3850,
-	ATI Mobility Radeon HD 3850 X2, ATI Mobility Radeon HD 3870,
-	ATI Mobility Radeon HD 3870 X2, ATI Radeon HD3870 X2,
-	ATI FireGL V7700, ATI Radeon HD3690, AMD Firestream 9170,
-	ATI Radeon HD 4550, ATI Radeon RV710, ATI Radeon HD 4350,
-	ATI Mobility Radeon 4300 Series, ATI Mobility Radeon 4500 Series,
-	ATI FirePro RG220, ATI Mobility Radeon 4330, ATI RV630,
-	ATI Mobility Radeon HD 2600, ATI Mobility Radeon HD 2600 XT,
-	ATI Radeon HD 2600 XT AGP, ATI Radeon HD 2600 Pro AGP,
-	ATI Radeon HD 2600 XT, ATI Radeon HD 2600 Pro, ATI Gemini RV630,
-	ATI Gemini Mobility Radeon HD 2600 XT, ATI FireGL V5600,
-	ATI FireGL V3600, ATI Radeon HD 2600 LE,
-	ATI Mobility FireGL Graphics Processor, ATI Radeon HD 3470,
-	ATI Mobility Radeon HD 3430, ATI Mobility Radeon HD 3400 Series,
-	ATI Radeon HD 3450, ATI Radeon HD 3430, ATI FirePro V3700,
-	ATI FireMV 2450, ATI Radeon HD 3600 Series, ATI Radeon HD 3650 AGP,
-	ATI Radeon HD 3600 PRO, ATI Radeon HD 3600 XT,
-	ATI Mobility Radeon HD 3650, ATI Mobility Radeon HD 3670,
-	ATI Mobility FireGL V5700, ATI Mobility FireGL V5725,
-	ATI Radeon HD 3200 Graphics, ATI Radeon 3100 Graphics,
-	ATI Radeon HD 3300 Graphics, ATI Radeon 3000 Graphics, SUMO, SUMO2,
-	ATI Radeon HD 4200, ATI Radeon 4100, ATI Mobility Radeon HD 4200,
-	ATI Mobility Radeon 4100, ATI Radeon HD 4290, ATI Radeon HD 4250,
-	AMD Radeon HD 6310 Graphics, AMD Radeon HD 6250 Graphics,
-	AMD Radeon HD 6300 Series Graphics,
-	AMD Radeon HD 6200 Series Graphics, PALM, CYPRESS,
-	ATI FirePro (FireGL) Graphics Adapter, AMD Firestream 9370,
-	AMD Firestream 9350, ATI Radeon HD 5800 Series,
-	ATI Radeon HD 5900 Series, ATI Mobility Radeon HD 5800 Series,
-	ATI Radeon HD 5700 Series, ATI Radeon HD 6700 Series,
-	ATI Mobility Radeon HD 5000 Series, ATI Mobility Radeon HD 5570,
-	ATI Radeon HD 5670, ATI Radeon HD 5570, ATI Radeon HD 5500 Series,
-	REDWOOD, ATI Mobility Radeon Graphics, CEDAR, ATI FirePro 2270,
-	ATI Radeon HD 5450, CAYMAN, AMD Radeon HD 6900 Series,
-	AMD Radeon HD 6900M Series, Mobility Radeon HD 6000 Series, BARTS,
-	AMD Radeon HD 6800 Series, AMD Radeon HD 6700 Series, TURKS, CAICOS,
-	ARUBA, TAHITI, PITCAIRN, VERDE, OLAND, HAINAN, BONAIRE, KABINI,
-	MULLINS, KAVERI, HAWAII
-[    26.888] (++) using VT number 7
+[    24.150] (**) ModulePath set to "/usr/lib64/xorg/modules"
+[    24.150] (**) Extension "Composite" is enabled
+[    24.150] (WW) Hotplugging is on, devices using drivers 'kbd', 'mouse' or 'vmmouse' will be disabled.
+[    24.150] (WW) Disabling Mouse0
+[    24.150] (WW) Disabling Keyboard0
+[    24.150] (II) Loader magic: 0x80bc80
+[    24.150] (II) Module ABI versions:
+[    24.150] 	X.Org ANSI C Emulation: 0.4
+[    24.150] 	X.Org Video Driver: 23.0
+[    24.150] 	X.Org XInput driver : 24.1
+[    24.150] 	X.Org Server Extension : 10.0
+[    24.150] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    24.151] (--) PCI:*(0:1:0:0) 10de:1c03:1462:3281 rev 161, Mem @ 0xfd000000/16777216, 0xc0000000/268435456, 0xd0000000/33554432, I/O @ 0x0000e000/128, BIOS @ 0x????????/131072
+[    24.151] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
+[    24.151] (II) LoadModule: "glx"
+[    24.191] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[    24.309] (II) Module glx: vendor="X.Org Foundation"
+[    24.309] 	compiled for 1.19.3, module version = 1.0.0
+[    24.309] 	ABI class: X.Org Server Extension, version 10.0
+[    24.309] (II) LoadModule: "nouveau"
+[    24.310] (II) Loading /usr/lib64/xorg/modules/drivers/nouveau_drv.so
+[    24.342] (II) Module nouveau: vendor="X.Org Foundation"
+[    24.342] 	compiled for 1.19.3, module version = 1.0.15
+[    24.342] 	Module class: X.Org Video Driver
+[    24.342] 	ABI class: X.Org Video Driver, version 23.0
+[    24.342] (II) NOUVEAU driver 
+[    24.342] (II) NOUVEAU driver for NVIDIA chipset families :
+[    24.342] 	RIVA TNT        (NV04)
+[    24.343] 	RIVA TNT2       (NV05)
+[    24.343] 	GeForce 256     (NV10)
+[    24.343] 	GeForce 2       (NV11, NV15)
+[    24.343] 	GeForce 4MX     (NV17, NV18)
+[    24.343] 	GeForce 3       (NV20)
+[    24.343] 	GeForce 4Ti     (NV25, NV28)
+[    24.343] 	GeForce FX      (NV3x)
+[    24.343] 	GeForce 6       (NV4x)
+[    24.343] 	GeForce 7       (G7x)
+[    24.343] 	GeForce 8       (G8x)
+[    24.343] 	GeForce GTX 200 (NVA0)
+[    24.343] 	GeForce GTX 400 (NVC0)
+[    24.343] (++) using VT number 7
 
-[    26.890] (II) [KMS] Kernel modesetting enabled.
-[    26.890] (==) RADEON(0): Depth 24, (--) framebuffer bpp 32
-[    26.890] (II) RADEON(0): Pixel depth = 24 bits stored in 4 bytes (32 bpp pixmaps)
-[    26.890] (==) RADEON(0): Default visual is TrueColor
-[    26.890] (==) RADEON(0): RGB weight 888
-[    26.890] (II) RADEON(0): Using 8 bits per RGB (8 bit DAC)
-[    26.890] (--) RADEON(0): Chipset: "TURKS" (ChipID = 0x6759)
-[    26.890] (II) Loading sub module "fb"
-[    26.890] (II) LoadModule: "fb"
-[    26.890] (II) Loading /usr/lib64/xorg/modules/libfb.so
-[    26.899] (II) Module fb: vendor="X.Org Foundation"
-[    26.899] 	compiled for 1.19.3, module version = 1.0.0
-[    26.899] 	ABI class: X.Org ANSI C Emulation, version 0.4
-[    26.899] (II) Loading sub module "dri2"
-[    26.899] (II) LoadModule: "dri2"
-[    26.899] (II) Module "dri2" already built-in
-[    26.899] (II) Loading sub module "glamoregl"
-[    26.899] (II) LoadModule: "glamoregl"
-[    26.899] (II) Loading /usr/lib64/xorg/modules/libglamoregl.so
-[    26.943] (II) Module glamoregl: vendor="X.Org Foundation"
-[    26.943] 	compiled for 1.19.3, module version = 1.0.0
-[    26.943] 	ABI class: X.Org ANSI C Emulation, version 0.4
-[    26.943] (II) glamor: OpenGL accelerated X.org driver based.
-[    27.576] (II) glamor: EGL version 1.4 (DRI2):
-[    27.605] (II) RADEON(0): glamor detected, initialising EGL layer.
-[    27.605] (II) RADEON(0): KMS Color Tiling: enabled
-[    27.605] (II) RADEON(0): KMS Color Tiling 2D: enabled
-[    27.605] (==) RADEON(0): TearFree property default: auto
-[    27.605] (II) RADEON(0): KMS Pageflipping: enabled
-[    27.606] (II) RADEON(0): Output HDMI-0 using monitor section Monitor0
-[    27.607] (II) RADEON(0): Output DVI-0 has no monitor section
-[    27.646] (II) RADEON(0): Output VGA-0 has no monitor section
-[    27.647] (II) RADEON(0): EDID for output HDMI-0
-[    27.648] (II) RADEON(0): EDID for output DVI-0
-[    27.686] (II) RADEON(0): EDID for output VGA-0
-[    27.686] (II) RADEON(0): Printing probed modes for output VGA-0
-[    27.686] (II) RADEON(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
-[    27.686] (II) RADEON(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
-[    27.686] (II) RADEON(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
-[    27.686] (II) RADEON(0): Modeline "848x480"x60.0   33.75  848 864 976 1088  480 486 494 517 +hsync +vsync (31.0 kHz e)
-[    27.686] (II) RADEON(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
-[    27.686] (II) RADEON(0): Output HDMI-0 disconnected
-[    27.686] (II) RADEON(0): Output DVI-0 disconnected
-[    27.686] (II) RADEON(0): Output VGA-0 connected
-[    27.686] (II) RADEON(0): Using exact sizes for initial modes
-[    27.686] (II) RADEON(0): Output VGA-0 using initial mode 1024x768 +0+0
-[    27.686] (II) RADEON(0): mem size init: gart size :3fdde000 vram size: s:40000000 visible:f99d000
-[    27.686] (==) RADEON(0): DPI set to (96, 96)
-[    27.686] (==) RADEON(0): Using gamma correction (1.0, 1.0, 1.0)
-[    27.686] (II) Loading sub module "ramdac"
-[    27.686] (II) LoadModule: "ramdac"
-[    27.686] (II) Module "ramdac" already built-in
-[    27.686] (--) Depth 24 pixmap format is 32 bpp
-[    27.686] (II) RADEON(0): [DRI2] Setup complete
-[    27.686] (II) RADEON(0): [DRI2]   DRI driver: r600
-[    27.686] (II) RADEON(0): [DRI2]   VDPAU driver: r600
-[    27.686] (II) RADEON(0): Front buffer size: 3072K
-[    27.686] (II) RADEON(0): VRAM usage limit set to 227192K
-[    27.687] (II) RADEON(0): SYNC extension fences enabled
-[    27.687] (II) RADEON(0): Present extension enabled
-[    27.687] (==) RADEON(0): DRI3 enabled
-[    27.687] (==) RADEON(0): Backing store enabled
-[    27.687] (II) RADEON(0): Direct rendering enabled
-[    27.721] (II) RADEON(0): Use GLAMOR acceleration.
-[    27.721] (II) RADEON(0): Acceleration enabled
-[    27.721] (==) RADEON(0): DPMS enabled
-[    27.721] (==) RADEON(0): Silken mouse enabled
-[    27.721] (II) RADEON(0): Set up textured video (glamor)
-[    27.722] (II) RADEON(0): [XvMC] Associated with GLAMOR Textured Video.
-[    27.722] (II) RADEON(0): [XvMC] Extension initialized.
-[    27.722] (II) RADEON(0): RandR 1.2 enabled, ignore the following RandR disabled message.
-[    27.722] (--) RandR disabled
-[    27.723] (II) AIGLX: enabled GLX_MESA_copy_sub_buffer
-[    27.723] (II) AIGLX: enabled GLX_ARB_create_context
-[    27.723] (II) AIGLX: enabled GLX_ARB_create_context_profile
-[    27.723] (II) AIGLX: enabled GLX_EXT_create_context_es{,2}_profile
-[    27.723] (II) AIGLX: enabled GLX_INTEL_swap_event
-[    27.723] (II) AIGLX: enabled GLX_SGI_swap_control
-[    27.723] (II) AIGLX: enabled GLX_EXT_framebuffer_sRGB
-[    27.723] (II) AIGLX: enabled GLX_ARB_fbconfig_float
-[    27.723] (II) AIGLX: enabled GLX_EXT_fbconfig_packed_float
-[    27.723] (II) AIGLX: GLX_EXT_texture_from_pixmap backed by buffer objects
-[    27.723] (II) AIGLX: enabled GLX_ARB_create_context_robustness
-[    27.724] (II) AIGLX: Loaded and initialized r600
-[    27.724] (II) GLX: Initialized DRI2 GL provider for screen 0
-[    27.725] (II) RADEON(0): Setting screen physical size to 270 x 203
-[    28.189] (II) config/udev: Adding input device Power Button (/dev/input/event1)
-[    28.189] (**) Power Button: Applying InputClass "evdev keyboard catchall"
-[    28.189] (**) Power Button: Applying InputClass "evdev keyboard catchall"
-[    28.189] (II) LoadModule: "evdev"
-[    28.202] (II) Loading /usr/lib64/xorg/modules/input/evdev_drv.so
-[    28.234] (II) Module evdev: vendor="X.Org Foundation"
-[    28.234] 	compiled for 1.19.3, module version = 2.10.5
-[    28.234] 	Module class: X.Org XInput Driver
-[    28.234] 	ABI class: X.Org XInput driver, version 24.1
-[    28.234] (II) Using input driver 'evdev' for 'Power Button'
-[    28.234] (**) Power Button: always reports core events
-[    28.234] (**) evdev: Power Button: Device: "/dev/input/event1"
-[    28.235] (--) evdev: Power Button: Vendor 0 Product 0x1
-[    28.235] (--) evdev: Power Button: Found keys
-[    28.235] (II) evdev: Power Button: Configuring as keyboard
-[    28.235] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
-[    28.235] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
-[    28.235] (**) Option "xkb_rules" "evdev"
-[    28.235] (II) config/udev: Adding input device Power Button (/dev/input/event0)
-[    28.235] (**) Power Button: Applying InputClass "evdev keyboard catchall"
-[    28.235] (**) Power Button: Applying InputClass "evdev keyboard catchall"
-[    28.235] (II) Using input driver 'evdev' for 'Power Button'
-[    28.235] (**) Power Button: always reports core events
-[    28.235] (**) evdev: Power Button: Device: "/dev/input/event0"
-[    28.235] (--) evdev: Power Button: Vendor 0 Product 0x1
-[    28.235] (--) evdev: Power Button: Found keys
-[    28.235] (II) evdev: Power Button: Configuring as keyboard
-[    28.235] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
-[    28.235] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
-[    28.235] (**) Option "xkb_rules" "evdev"
-[    28.235] (II) config/udev: Adding input device HDA ATI HDMI HDMI/DP,pcm=3 (/dev/input/event2)
-[    28.235] (II) No input driver specified, ignoring this device.
-[    28.235] (II) This device may have been added with another device file.
-[    28.236] (II) config/udev: Adding input device USB-HID GamingKeyBoard (/dev/input/event11)
-[    28.236] (**) USB-HID GamingKeyBoard: Applying InputClass "evdev keyboard catchall"
-[    28.236] (**) USB-HID GamingKeyBoard: Applying InputClass "evdev keyboard catchall"
-[    28.236] (II) Using input driver 'evdev' for 'USB-HID GamingKeyBoard'
-[    28.236] (**) USB-HID GamingKeyBoard: always reports core events
-[    28.236] (**) evdev: USB-HID GamingKeyBoard: Device: "/dev/input/event11"
-[    28.236] (--) evdev: USB-HID GamingKeyBoard: Vendor 0x1ea7 Product 0x908
-[    28.236] (--) evdev: USB-HID GamingKeyBoard: Found keys
-[    28.236] (II) evdev: USB-HID GamingKeyBoard: Configuring as keyboard
-[    28.236] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:04.0/0000:02:00.0/usb8/8-1/8-1:1.0/0003:1EA7:0908.0001/input/input11/event11"
-[    28.236] (II) XINPUT: Adding extended input device "USB-HID GamingKeyBoard" (type: KEYBOARD, id 8)
-[    28.236] (**) Option "xkb_rules" "evdev"
-[    28.236] (II) config/udev: Adding input device USB-HID GamingKeyBoard (/dev/input/event12)
-[    28.236] (**) USB-HID GamingKeyBoard: Applying InputClass "evdev keyboard catchall"
-[    28.236] (**) USB-HID GamingKeyBoard: Applying InputClass "evdev keyboard catchall"
-[    28.236] (II) Using input driver 'evdev' for 'USB-HID GamingKeyBoard'
-[    28.236] (**) USB-HID GamingKeyBoard: always reports core events
-[    28.236] (**) evdev: USB-HID GamingKeyBoard: Device: "/dev/input/event12"
-[    28.236] (--) evdev: USB-HID GamingKeyBoard: Vendor 0x1ea7 Product 0x908
-[    28.236] (--) evdev: USB-HID GamingKeyBoard: Found 1 mouse buttons
-[    28.236] (--) evdev: USB-HID GamingKeyBoard: Found scroll wheel(s)
-[    28.236] (--) evdev: USB-HID GamingKeyBoard: Found relative axes
-[    28.236] (II) evdev: USB-HID GamingKeyBoard: Forcing relative x/y axes to exist.
-[    28.236] (--) evdev: USB-HID GamingKeyBoard: Found absolute axes
-[    28.236] (II) evdev: USB-HID GamingKeyBoard: Forcing absolute x/y axes to exist.
-[    28.236] (--) evdev: USB-HID GamingKeyBoard: Found keys
-[    28.236] (II) evdev: USB-HID GamingKeyBoard: Configuring as mouse
-[    28.236] (II) evdev: USB-HID GamingKeyBoard: Configuring as keyboard
-[    28.236] (II) evdev: USB-HID GamingKeyBoard: Adding scrollwheel support
-[    28.236] (**) evdev: USB-HID GamingKeyBoard: YAxisMapping: buttons 4 and 5
-[    28.236] (**) evdev: USB-HID GamingKeyBoard: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
-[    28.236] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:04.0/0000:02:00.0/usb8/8-1/8-1:1.1/0003:1EA7:0908.0002/input/input12/event12"
-[    28.236] (II) XINPUT: Adding extended input device "USB-HID GamingKeyBoard" (type: KEYBOARD, id 9)
-[    28.236] (**) Option "xkb_rules" "evdev"
-[    28.236] (II) evdev: USB-HID GamingKeyBoard: initialized for relative axes.
-[    28.236] (WW) evdev: USB-HID GamingKeyBoard: ignoring absolute axes.
-[    28.237] (**) USB-HID GamingKeyBoard: (accel) keeping acceleration scheme 1
-[    28.237] (**) USB-HID GamingKeyBoard: (accel) acceleration profile 0
-[    28.237] (**) USB-HID GamingKeyBoard: (accel) acceleration factor: 2.000
-[    28.237] (**) USB-HID GamingKeyBoard: (accel) acceleration threshold: 4
-[    28.237] (II) config/udev: Adding input device G-SPY USB Gaming Mouse (/dev/input/event13)
-[    28.237] (**) G-SPY USB Gaming Mouse: Applying InputClass "evdev keyboard catchall"
-[    28.237] (**) G-SPY USB Gaming Mouse: Applying InputClass "evdev keyboard catchall"
-[    28.237] (II) Using input driver 'evdev' for 'G-SPY USB Gaming Mouse'
-[    28.237] (**) G-SPY USB Gaming Mouse: always reports core events
-[    28.237] (**) evdev: G-SPY USB Gaming Mouse: Device: "/dev/input/event13"
-[    28.237] (--) evdev: G-SPY USB Gaming Mouse: Vendor 0x4d9 Product 0xa070
-[    28.237] (--) evdev: G-SPY USB Gaming Mouse: Found keys
-[    28.237] (II) evdev: G-SPY USB Gaming Mouse: Configuring as keyboard
-[    28.237] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:04.0/0000:02:00.0/usb8/8-2/8-2:1.0/0003:04D9:A070.0004/input/input13/event13"
-[    28.237] (II) XINPUT: Adding extended input device "G-SPY USB Gaming Mouse" (type: KEYBOARD, id 10)
-[    28.237] (**) Option "xkb_rules" "evdev"
-[    28.237] (II) config/udev: Adding input device G-SPY USB Gaming Mouse (/dev/input/event14)
-[    28.237] (**) G-SPY USB Gaming Mouse: Applying InputClass "evdev pointer catchall"
-[    28.237] (**) G-SPY USB Gaming Mouse: Applying InputClass "evdev keyboard catchall"
-[    28.237] (**) G-SPY USB Gaming Mouse: Applying InputClass "evdev pointer catchall"
-[    28.237] (**) G-SPY USB Gaming Mouse: Applying InputClass "evdev keyboard catchall"
-[    28.237] (II) Using input driver 'evdev' for 'G-SPY USB Gaming Mouse'
-[    28.237] (**) G-SPY USB Gaming Mouse: always reports core events
-[    28.237] (**) evdev: G-SPY USB Gaming Mouse: Device: "/dev/input/event14"
-[    28.237] (--) evdev: G-SPY USB Gaming Mouse: Vendor 0x4d9 Product 0xa070
-[    28.237] (--) evdev: G-SPY USB Gaming Mouse: Found 9 mouse buttons
-[    28.237] (--) evdev: G-SPY USB Gaming Mouse: Found scroll wheel(s)
-[    28.237] (--) evdev: G-SPY USB Gaming Mouse: Found relative axes
-[    28.237] (--) evdev: G-SPY USB Gaming Mouse: Found x and y relative axes
-[    28.237] (--) evdev: G-SPY USB Gaming Mouse: Found absolute axes
-[    28.237] (II) evdev: G-SPY USB Gaming Mouse: Forcing absolute x/y axes to exist.
-[    28.237] (--) evdev: G-SPY USB Gaming Mouse: Found keys
-[    28.237] (II) evdev: G-SPY USB Gaming Mouse: Configuring as mouse
-[    28.237] (II) evdev: G-SPY USB Gaming Mouse: Configuring as keyboard
-[    28.237] (II) evdev: G-SPY USB Gaming Mouse: Adding scrollwheel support
-[    28.237] (**) evdev: G-SPY USB Gaming Mouse: YAxisMapping: buttons 4 and 5
-[    28.237] (**) evdev: G-SPY USB Gaming Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
-[    28.237] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:04.0/0000:02:00.0/usb8/8-2/8-2:1.1/0003:04D9:A070.0005/input/input14/event14"
-[    28.237] (II) XINPUT: Adding extended input device "G-SPY USB Gaming Mouse" (type: KEYBOARD, id 11)
-[    28.237] (**) Option "xkb_rules" "evdev"
-[    28.238] (II) evdev: G-SPY USB Gaming Mouse: initialized for relative axes.
-[    28.238] (WW) evdev: G-SPY USB Gaming Mouse: ignoring absolute axes.
-[    28.238] (**) G-SPY USB Gaming Mouse: (accel) keeping acceleration scheme 1
-[    28.238] (**) G-SPY USB Gaming Mouse: (accel) acceleration profile 0
-[    28.238] (**) G-SPY USB Gaming Mouse: (accel) acceleration factor: 2.000
-[    28.238] (**) G-SPY USB Gaming Mouse: (accel) acceleration threshold: 4
-[    28.238] (II) config/udev: Adding input device G-SPY USB Gaming Mouse (/dev/input/mouse0)
-[    28.238] (II) No input driver specified, ignoring this device.
-[    28.238] (II) This device may have been added with another device file.
-[    28.238] (II) config/udev: Adding input device HDA ATI SB Front Headphone (/dev/input/event10)
-[    28.238] (II) No input driver specified, ignoring this device.
-[    28.238] (II) This device may have been added with another device file.
-[    28.238] (II) config/udev: Adding input device HDA ATI SB Front Mic (/dev/input/event3)
-[    28.238] (II) No input driver specified, ignoring this device.
-[    28.238] (II) This device may have been added with another device file.
-[    28.238] (II) config/udev: Adding input device HDA ATI SB Rear Mic (/dev/input/event4)
-[    28.238] (II) No input driver specified, ignoring this device.
-[    28.238] (II) This device may have been added with another device file.
-[    28.239] (II) config/udev: Adding input device HDA ATI SB Line (/dev/input/event5)
-[    28.239] (II) No input driver specified, ignoring this device.
-[    28.239] (II) This device may have been added with another device file.
-[    28.239] (II) config/udev: Adding input device HDA ATI SB Line Out Front (/dev/input/event6)
-[    28.239] (II) No input driver specified, ignoring this device.
-[    28.239] (II) This device may have been added with another device file.
-[    28.239] (II) config/udev: Adding input device HDA ATI SB Line Out Surround (/dev/input/event7)
-[    28.239] (II) No input driver specified, ignoring this device.
-[    28.239] (II) This device may have been added with another device file.
-[    28.239] (II) config/udev: Adding input device HDA ATI SB Line Out CLFE (/dev/input/event8)
-[    28.239] (II) No input driver specified, ignoring this device.
-[    28.239] (II) This device may have been added with another device file.
-[    28.239] (II) config/udev: Adding input device HDA ATI SB Line Out Side (/dev/input/event9)
-[    28.239] (II) No input driver specified, ignoring this device.
-[    28.239] (II) This device may have been added with another device file.
-[   583.327] (II) RADEON(0): Allocate new frame buffer 800x600 stride 832
-[   583.327] (II) RADEON(0): VRAM usage limit set to 228085K
-[   591.192] (II) RADEON(0): Allocate new frame buffer 1024x768 stride 1024
-[   591.192] (II) RADEON(0): VRAM usage limit set to 227192K
+[    24.355] (II) [drm] nouveau interface version: 1.3.1
+[    24.355] (II) Loading sub module "dri2"
+[    24.355] (II) LoadModule: "dri2"
+[    24.355] (II) Module "dri2" already built-in
+[    24.355] (--) NOUVEAU(0): Chipset: "NVIDIA NV136"
+[    24.355] (==) NOUVEAU(0): Depth 24, (--) framebuffer bpp 32
+[    24.355] (==) NOUVEAU(0): RGB weight 888
+[    24.355] (==) NOUVEAU(0): Default visual is TrueColor
+[    24.355] (==) NOUVEAU(0): Using HW cursor
+[    24.355] (==) NOUVEAU(0): Allowed maximum DRI level 2.
+[    24.355] (==) NOUVEAU(0): GLX sync to VBlank enabled.
+[    24.355] (==) NOUVEAU(0): Page flipping enabled
+[    24.355] (==) NOUVEAU(0): Swap limit set to 1 [Max allowed 2]
+[    24.355] (==) NOUVEAU(0): Page flipping synced to vblank by kernel.
+[    24.355] (II) NOUVEAU(0): Initializing outputs ...
+[    24.356] (II) NOUVEAU(0): Output DVI-D-1 using monitor section Monitor0
+[    24.388] (II) NOUVEAU(0): Output DP-1 has no monitor section
+[    24.420] (II) NOUVEAU(0): Output DP-2 has no monitor section
+[    24.488] (II) NOUVEAU(0): Output HDMI-1 has no monitor section
+[    24.520] (II) NOUVEAU(0): Output DP-3 has no monitor section
+[    24.520] (II) NOUVEAU(0): 5 crtcs needed for screen.
+[    24.520] (II) NOUVEAU(0): Allocated crtc nr. 0 to this screen.
+[    24.520] (II) NOUVEAU(0): Allocated crtc nr. 1 to this screen.
+[    24.520] (II) NOUVEAU(0): Allocated crtc nr. 2 to this screen.
+[    24.520] (II) NOUVEAU(0): Allocated crtc nr. 3 to this screen.
+[    24.521] (II) NOUVEAU(0): EDID for output DVI-D-1
+[    24.553] (II) NOUVEAU(0): EDID for output DP-1
+[    24.585] (II) NOUVEAU(0): EDID for output DP-2
+[    24.653] (II) NOUVEAU(0): EDID for output HDMI-1
+[    24.653] (II) NOUVEAU(0): Manufacturer: HKC  Model: 2200  Serial#: 1
+[    24.653] (II) NOUVEAU(0): Year: 2012  Week: 32
+[    24.653] (II) NOUVEAU(0): EDID Version: 1.3
+[    24.653] (II) NOUVEAU(0): Digital Display Input
+[    24.653] (II) NOUVEAU(0): Max Image Size [cm]: horiz.: 47  vert.: 30
+[    24.653] (II) NOUVEAU(0): Gamma: 2.20
+[    24.653] (II) NOUVEAU(0): DPMS capabilities: StandBy Suspend Off
+[    24.653] (II) NOUVEAU(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[    24.653] (II) NOUVEAU(0): First detailed timing is preferred mode
+[    24.653] (II) NOUVEAU(0): redX: 0.597 redY: 0.343   greenX: 0.316 greenY: 0.566
+[    24.653] (II) NOUVEAU(0): blueX: 0.153 blueY: 0.131   whiteX: 0.313 whiteY: 0.329
+[    24.653] (II) NOUVEAU(0): Supported established timings:
+[    24.653] (II) NOUVEAU(0): 720x400@70Hz
+[    24.653] (II) NOUVEAU(0): 640x480@60Hz
+[    24.653] (II) NOUVEAU(0): 640x480@67Hz
+[    24.653] (II) NOUVEAU(0): 640x480@72Hz
+[    24.653] (II) NOUVEAU(0): 640x480@75Hz
+[    24.653] (II) NOUVEAU(0): 800x600@60Hz
+[    24.653] (II) NOUVEAU(0): 800x600@72Hz
+[    24.653] (II) NOUVEAU(0): 800x600@75Hz
+[    24.653] (II) NOUVEAU(0): 1024x768@60Hz
+[    24.653] (II) NOUVEAU(0): 1024x768@70Hz
+[    24.653] (II) NOUVEAU(0): 1024x768@75Hz
+[    24.653] (II) NOUVEAU(0): 1280x1024@75Hz
+[    24.653] (II) NOUVEAU(0): Manufacturer's mask: 0
+[    24.653] (II) NOUVEAU(0): Supported standard timings:
+[    24.653] (II) NOUVEAU(0): #0: hsize: 1280  vsize 800  refresh: 60  vid: 129
+[    24.653] (II) NOUVEAU(0): #1: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[    24.653] (II) NOUVEAU(0): #2: hsize: 1280  vsize 1024  refresh: 70  vid: 35457
+[    24.653] (II) NOUVEAU(0): #3: hsize: 1440  vsize 900  refresh: 60  vid: 149
+[    24.653] (II) NOUVEAU(0): Supported detailed timing:
+[    24.653] (II) NOUVEAU(0): clock: 146.2 MHz   Image Size:  433 x 270 mm
+[    24.653] (II) NOUVEAU(0): h_active: 1680  h_sync: 1784  h_sync_end 1960 h_blank_end 2240 h_border: 0
+[    24.653] (II) NOUVEAU(0): v_active: 1050  v_sync: 1053  v_sync_end 1059 v_blanking: 1089 v_border: 0
+[    24.653] (II) NOUVEAU(0): Ranges: V min: 56 V max: 75 Hz, H min: 31 H max: 96 kHz, PixClock max 215 MHz
+[    24.653] (II) NOUVEAU(0): Monitor name: 
+[    24.653] (II) NOUVEAU(0): Serial No: 200804220001
+[    24.653] (II) NOUVEAU(0): Supported detailed timing:
+[    24.653] (II) NOUVEAU(0): clock: 27.0 MHz   Image Size:  160 x 90 mm
+[    24.653] (II) NOUVEAU(0): h_active: 720  h_sync: 736  h_sync_end 798 h_blank_end 858 h_border: 0
+[    24.653] (II) NOUVEAU(0): v_active: 480  v_sync: 489  v_sync_end 495 v_blanking: 525 v_border: 0
+[    24.653] (II) NOUVEAU(0): Number of EDID sections to follow: 1
+[    24.653] (II) NOUVEAU(0): EDID (in hex):
+[    24.653] (II) NOUVEAU(0): 	00ffffffffffff002163002201000000
+[    24.653] (II) NOUVEAU(0): 	20160103802f1e78eaf0659857519127
+[    24.653] (II) NOUVEAU(0): 	215054bdcf0081008180818a95000101
+[    24.653] (II) NOUVEAU(0): 	01010101010121399030621a274068b0
+[    24.653] (II) NOUVEAU(0): 	3600b10e1100001c000000fd00384b1f
+[    24.653] (II) NOUVEAU(0): 	6015000a202020202020000000fc000a
+[    24.653] (II) NOUVEAU(0): 	202020202020202020202020000000ff
+[    24.653] (II) NOUVEAU(0): 	003230303830343232303030310a0136
+[    24.653] (II) NOUVEAU(0): 	02031b61230907078301000067030c00
+[    24.653] (II) NOUVEAU(0): 	2000802d43908402e2000f8c0ad08a20
+[    24.653] (II) NOUVEAU(0): 	e02d10103e9600a05a00000000000000
+[    24.653] (II) NOUVEAU(0): 	00000000000000000000000000000000
+[    24.653] (II) NOUVEAU(0): 	00000000000000000000000000000000
+[    24.653] (II) NOUVEAU(0): 	00000000000000000000000000000000
+[    24.653] (II) NOUVEAU(0): 	00000000000000000000000000000000
+[    24.653] (II) NOUVEAU(0): 	00000000000000000000000000000029
+[    24.653] (--) NOUVEAU(0): HDMI max TMDS frequency 225000KHz
+[    24.653] (II) NOUVEAU(0): Printing probed modes for output HDMI-1
+[    24.653] (II) NOUVEAU(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz eP)
+[    24.653] (II) NOUVEAU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "1280x1024"x75.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "1280x1024"x70.0  128.95  1280 1368 1504 1728  1024 1025 1028 1066 -hsync +vsync (74.6 kHz)
+[    24.653] (II) NOUVEAU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "1440x900"x59.9   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "1024x768"x70.1   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "800x600"x72.2   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "640x480"x72.8   31.50  640 664 704 832  480 489 492 520 -hsync -vsync (37.9 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "640x480"x66.7   30.24  640 704 768 864  480 483 486 525 -hsync -vsync (35.0 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    24.653] (II) NOUVEAU(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[    24.685] (II) NOUVEAU(0): EDID for output DP-3
+[    24.685] (II) NOUVEAU(0): Output DVI-D-1 disconnected
+[    24.685] (II) NOUVEAU(0): Output DP-1 disconnected
+[    24.685] (II) NOUVEAU(0): Output DP-2 disconnected
+[    24.685] (II) NOUVEAU(0): Output HDMI-1 connected
+[    24.685] (II) NOUVEAU(0): Output DP-3 disconnected
+[    24.685] (II) NOUVEAU(0): Using exact sizes for initial modes
+[    24.685] (II) NOUVEAU(0): Output HDMI-1 using initial mode 1680x1050 +0+0
+[    24.685] (==) NOUVEAU(0): Using gamma correction (1.0, 1.0, 1.0)
+[    24.685] (--) NOUVEAU(0): Virtual size is 1680x1050 (pitch 0)
+[    24.685] (**) NOUVEAU(0):  Driver mode "1680x1050": 146.2 MHz (scaled from 0.0 MHz), 65.3 kHz, 60.0 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1680x1050"x60.0  146.25  1680 1784 1960 2240  1050 1053 1059 1089 -hsync +vsync (65.3 kHz eP)
+[    24.685] (**) NOUVEAU(0):  Driver mode "1920x1080": 148.5 MHz (scaled from 0.0 MHz), 67.5 kHz, 60.0 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "1920x1080": 148.4 MHz (scaled from 0.0 MHz), 67.4 kHz, 59.9 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "1280x1024": 135.0 MHz (scaled from 0.0 MHz), 80.0 kHz, 75.0 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1280x1024"x75.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[    24.685] (**) NOUVEAU(0):  Mode "1280x1024": 128.9 MHz (scaled from 0.0 MHz), 74.6 kHz, 70.0 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1280x1024"x70.0  128.95  1280 1368 1504 1728  1024 1025 1028 1066 -hsync +vsync (74.6 kHz)
+[    24.685] (**) NOUVEAU(0):  Driver mode "1280x1024": 108.0 MHz (scaled from 0.0 MHz), 64.0 kHz, 60.0 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "1440x900": 88.8 MHz (scaled from 0.0 MHz), 55.5 kHz, 59.9 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1440x900"x59.9   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "1280x800": 71.0 MHz (scaled from 0.0 MHz), 49.3 kHz, 59.9 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "1280x720": 74.2 MHz (scaled from 0.0 MHz), 45.0 kHz, 60.0 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "1280x720": 74.2 MHz (scaled from 0.0 MHz), 45.0 kHz, 59.9 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "1024x768": 78.8 MHz (scaled from 0.0 MHz), 60.0 kHz, 75.0 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "1024x768": 75.0 MHz (scaled from 0.0 MHz), 56.5 kHz, 70.1 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1024x768"x70.1   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "1024x768": 65.0 MHz (scaled from 0.0 MHz), 48.4 kHz, 60.0 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "800x600": 50.0 MHz (scaled from 0.0 MHz), 48.1 kHz, 72.2 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "800x600"x72.2   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "800x600": 49.5 MHz (scaled from 0.0 MHz), 46.9 kHz, 75.0 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "800x600": 40.0 MHz (scaled from 0.0 MHz), 37.9 kHz, 60.3 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "720x480": 27.0 MHz (scaled from 0.0 MHz), 31.5 kHz, 60.0 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "720x480": 27.0 MHz (scaled from 0.0 MHz), 31.5 kHz, 59.9 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "640x480": 31.5 MHz (scaled from 0.0 MHz), 37.5 kHz, 75.0 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "640x480": 31.5 MHz (scaled from 0.0 MHz), 37.9 kHz, 72.8 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "640x480"x72.8   31.50  640 664 704 832  480 489 492 520 -hsync -vsync (37.9 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "640x480": 30.2 MHz (scaled from 0.0 MHz), 35.0 kHz, 66.7 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "640x480"x66.7   30.24  640 704 768 864  480 483 486 525 -hsync -vsync (35.0 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "640x480": 25.2 MHz (scaled from 0.0 MHz), 31.5 kHz, 60.0 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "640x480": 25.2 MHz (scaled from 0.0 MHz), 31.5 kHz, 59.9 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    24.685] (**) NOUVEAU(0):  Driver mode "720x400": 28.3 MHz (scaled from 0.0 MHz), 31.5 kHz, 70.1 Hz
+[    24.685] (II) NOUVEAU(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[    24.685] (==) NOUVEAU(0): DPI set to (96, 96)
+[    24.685] (II) Loading sub module "fb"
+[    24.685] (II) LoadModule: "fb"
+[    24.685] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[    24.716] (II) Module fb: vendor="X.Org Foundation"
+[    24.716] 	compiled for 1.19.3, module version = 1.0.0
+[    24.716] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    24.716] (II) Loading sub module "shadowfb"
+[    24.716] (II) LoadModule: "shadowfb"
+[    24.716] (II) Loading /usr/lib64/xorg/modules/libshadowfb.so
+[    24.725] (II) Module shadowfb: vendor="X.Org Foundation"
+[    24.725] 	compiled for 1.19.3, module version = 1.0.0
+[    24.725] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    24.725] (--) Depth 24 pixmap format is 32 bpp
+[    24.753] (II) NOUVEAU(0): Channel setup complete.
+[    24.778] (II) NOUVEAU(0): [COPY] async initialised.
+[    24.779] (II) NOUVEAU(0): Hardware support for Present enabled
+[    24.779] (II) NOUVEAU(0): [DRI2] Setup complete
+[    24.779] (II) NOUVEAU(0): [DRI2]   DRI driver: nouveau
+[    24.779] (II) NOUVEAU(0): [DRI2]   VDPAU driver: nouveau
+[    24.779] (II) Loading sub module "exa"
+[    24.779] (II) LoadModule: "exa"
+[    24.779] (II) Loading /usr/lib64/xorg/modules/libexa.so
+[    24.793] (II) Module exa: vendor="X.Org Foundation"
+[    24.793] 	compiled for 1.19.3, module version = 2.6.0
+[    24.793] 	ABI class: X.Org Video Driver, version 23.0
+[    24.793] (II) EXA(0): Driver allocated offscreen pixmaps
+[    24.793] (II) EXA(0): Driver registered support for the following operations:
+[    24.793] (II)         Solid
+[    24.793] (II)         Copy
+[    24.793] (II)         Composite (RENDER acceleration)
+[    24.793] (II)         UploadToScreen
+[    24.793] (II)         DownloadFromScreen
+[    24.793] (==) NOUVEAU(0): Backing store enabled
+[    24.793] (==) NOUVEAU(0): Silken mouse enabled
+[    24.793] (II) NOUVEAU(0): [XvMC] Associated with Nouveau GeForce 8/9 Textured Video.
+[    24.793] (II) NOUVEAU(0): [XvMC] Extension initialized.
+[    24.793] (==) NOUVEAU(0): DPMS enabled
+[    24.793] (II) NOUVEAU(0): RandR 1.2 enabled, ignore the following RandR disabled message.
+[    24.794] (--) RandR disabled
+[    25.361] (EE) AIGLX error: Calling driver entry point failed
+[    25.375] (EE) AIGLX: reverting to software rendering
+[    25.399] (II) IGLX: enabled GLX_MESA_copy_sub_buffer
+[    25.399] (II) IGLX: Loaded and initialized swrast
+[    25.399] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[    25.400] (II) NOUVEAU(0): NVEnterVT is called.
+[    25.405] (II) NOUVEAU(0): Setting screen physical size to 444 x 277
+[    25.405] resize called 1680 1050
+[    25.807] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    25.807] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    25.807] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    25.807] (II) LoadModule: "evdev"
+[    25.820] (II) Loading /usr/lib64/xorg/modules/input/evdev_drv.so
+[    25.852] (II) Module evdev: vendor="X.Org Foundation"
+[    25.852] 	compiled for 1.19.3, module version = 2.10.5
+[    25.852] 	Module class: X.Org XInput Driver
+[    25.852] 	ABI class: X.Org XInput driver, version 24.1
+[    25.852] (II) Using input driver 'evdev' for 'Power Button'
+[    25.852] (**) Power Button: always reports core events
+[    25.852] (**) evdev: Power Button: Device: "/dev/input/event1"
+[    25.852] (--) evdev: Power Button: Vendor 0 Product 0x1
+[    25.852] (--) evdev: Power Button: Found keys
+[    25.852] (II) evdev: Power Button: Configuring as keyboard
+[    25.852] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+[    25.852] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    25.852] (**) Option "xkb_rules" "evdev"
+[    25.852] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    25.852] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    25.852] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    25.852] (II) Using input driver 'evdev' for 'Power Button'
+[    25.852] (**) Power Button: always reports core events
+[    25.852] (**) evdev: Power Button: Device: "/dev/input/event0"
+[    25.852] (--) evdev: Power Button: Vendor 0 Product 0x1
+[    25.852] (--) evdev: Power Button: Found keys
+[    25.852] (II) evdev: Power Button: Configuring as keyboard
+[    25.853] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+[    25.853] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[    25.853] (**) Option "xkb_rules" "evdev"
+[    25.853] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event10)
+[    25.853] (II) No input driver specified, ignoring this device.
+[    25.853] (II) This device may have been added with another device file.
+[    25.853] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event11)
+[    25.853] (II) No input driver specified, ignoring this device.
+[    25.853] (II) This device may have been added with another device file.
+[    25.853] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event12)
+[    25.853] (II) No input driver specified, ignoring this device.
+[    25.853] (II) This device may have been added with another device file.
+[    25.853] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event13)
+[    25.853] (II) No input driver specified, ignoring this device.
+[    25.853] (II) This device may have been added with another device file.
+[    25.854] (II) config/udev: Adding input device USB-HID GamingKeyBoard (/dev/input/event14)
+[    25.854] (**) USB-HID GamingKeyBoard: Applying InputClass "evdev keyboard catchall"
+[    25.854] (**) USB-HID GamingKeyBoard: Applying InputClass "evdev keyboard catchall"
+[    25.854] (II) Using input driver 'evdev' for 'USB-HID GamingKeyBoard'
+[    25.854] (**) USB-HID GamingKeyBoard: always reports core events
+[    25.854] (**) evdev: USB-HID GamingKeyBoard: Device: "/dev/input/event14"
+[    25.854] (--) evdev: USB-HID GamingKeyBoard: Vendor 0x1ea7 Product 0x908
+[    25.854] (--) evdev: USB-HID GamingKeyBoard: Found keys
+[    25.854] (II) evdev: USB-HID GamingKeyBoard: Configuring as keyboard
+[    25.854] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:04.0/0000:02:00.0/usb8/8-1/8-1:1.0/0003:1EA7:0908.0001/input/input14/event14"
+[    25.854] (II) XINPUT: Adding extended input device "USB-HID GamingKeyBoard" (type: KEYBOARD, id 8)
+[    25.854] (**) Option "xkb_rules" "evdev"
+[    25.854] (II) config/udev: Adding input device USB-HID GamingKeyBoard (/dev/input/event15)
+[    25.854] (**) USB-HID GamingKeyBoard: Applying InputClass "evdev keyboard catchall"
+[    25.854] (**) USB-HID GamingKeyBoard: Applying InputClass "evdev keyboard catchall"
+[    25.854] (II) Using input driver 'evdev' for 'USB-HID GamingKeyBoard'
+[    25.854] (**) USB-HID GamingKeyBoard: always reports core events
+[    25.854] (**) evdev: USB-HID GamingKeyBoard: Device: "/dev/input/event15"
+[    25.854] (--) evdev: USB-HID GamingKeyBoard: Vendor 0x1ea7 Product 0x908
+[    25.854] (--) evdev: USB-HID GamingKeyBoard: Found 1 mouse buttons
+[    25.854] (--) evdev: USB-HID GamingKeyBoard: Found scroll wheel(s)
+[    25.854] (--) evdev: USB-HID GamingKeyBoard: Found relative axes
+[    25.854] (II) evdev: USB-HID GamingKeyBoard: Forcing relative x/y axes to exist.
+[    25.854] (--) evdev: USB-HID GamingKeyBoard: Found absolute axes
+[    25.854] (II) evdev: USB-HID GamingKeyBoard: Forcing absolute x/y axes to exist.
+[    25.854] (--) evdev: USB-HID GamingKeyBoard: Found keys
+[    25.854] (II) evdev: USB-HID GamingKeyBoard: Configuring as mouse
+[    25.854] (II) evdev: USB-HID GamingKeyBoard: Configuring as keyboard
+[    25.854] (II) evdev: USB-HID GamingKeyBoard: Adding scrollwheel support
+[    25.854] (**) evdev: USB-HID GamingKeyBoard: YAxisMapping: buttons 4 and 5
+[    25.854] (**) evdev: USB-HID GamingKeyBoard: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[    25.854] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:04.0/0000:02:00.0/usb8/8-1/8-1:1.1/0003:1EA7:0908.0002/input/input15/event15"
+[    25.854] (II) XINPUT: Adding extended input device "USB-HID GamingKeyBoard" (type: KEYBOARD, id 9)
+[    25.854] (**) Option "xkb_rules" "evdev"
+[    25.854] (II) evdev: USB-HID GamingKeyBoard: initialized for relative axes.
+[    25.854] (WW) evdev: USB-HID GamingKeyBoard: ignoring absolute axes.
+[    25.854] (**) USB-HID GamingKeyBoard: (accel) keeping acceleration scheme 1
+[    25.854] (**) USB-HID GamingKeyBoard: (accel) acceleration profile 0
+[    25.854] (**) USB-HID GamingKeyBoard: (accel) acceleration factor: 2.000
+[    25.854] (**) USB-HID GamingKeyBoard: (accel) acceleration threshold: 4
+[    25.855] (II) config/udev: Adding input device G-SPY USB Gaming Mouse (/dev/input/event16)
+[    25.855] (**) G-SPY USB Gaming Mouse: Applying InputClass "evdev keyboard catchall"
+[    25.855] (**) G-SPY USB Gaming Mouse: Applying InputClass "evdev keyboard catchall"
+[    25.855] (II) Using input driver 'evdev' for 'G-SPY USB Gaming Mouse'
+[    25.855] (**) G-SPY USB Gaming Mouse: always reports core events
+[    25.855] (**) evdev: G-SPY USB Gaming Mouse: Device: "/dev/input/event16"
+[    25.855] (--) evdev: G-SPY USB Gaming Mouse: Vendor 0x4d9 Product 0xa070
+[    25.855] (--) evdev: G-SPY USB Gaming Mouse: Found keys
+[    25.855] (II) evdev: G-SPY USB Gaming Mouse: Configuring as keyboard
+[    25.855] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:04.0/0000:02:00.0/usb8/8-2/8-2:1.0/0003:04D9:A070.0004/input/input16/event16"
+[    25.855] (II) XINPUT: Adding extended input device "G-SPY USB Gaming Mouse" (type: KEYBOARD, id 10)
+[    25.855] (**) Option "xkb_rules" "evdev"
+[    25.855] (II) config/udev: Adding input device G-SPY USB Gaming Mouse (/dev/input/event17)
+[    25.855] (**) G-SPY USB Gaming Mouse: Applying InputClass "evdev pointer catchall"
+[    25.855] (**) G-SPY USB Gaming Mouse: Applying InputClass "evdev keyboard catchall"
+[    25.855] (**) G-SPY USB Gaming Mouse: Applying InputClass "evdev pointer catchall"
+[    25.855] (**) G-SPY USB Gaming Mouse: Applying InputClass "evdev keyboard catchall"
+[    25.855] (II) Using input driver 'evdev' for 'G-SPY USB Gaming Mouse'
+[    25.855] (**) G-SPY USB Gaming Mouse: always reports core events
+[    25.855] (**) evdev: G-SPY USB Gaming Mouse: Device: "/dev/input/event17"
+[    25.855] (--) evdev: G-SPY USB Gaming Mouse: Vendor 0x4d9 Product 0xa070
+[    25.855] (--) evdev: G-SPY USB Gaming Mouse: Found 9 mouse buttons
+[    25.855] (--) evdev: G-SPY USB Gaming Mouse: Found scroll wheel(s)
+[    25.855] (--) evdev: G-SPY USB Gaming Mouse: Found relative axes
+[    25.855] (--) evdev: G-SPY USB Gaming Mouse: Found x and y relative axes
+[    25.855] (--) evdev: G-SPY USB Gaming Mouse: Found absolute axes
+[    25.855] (II) evdev: G-SPY USB Gaming Mouse: Forcing absolute x/y axes to exist.
+[    25.855] (--) evdev: G-SPY USB Gaming Mouse: Found keys
+[    25.855] (II) evdev: G-SPY USB Gaming Mouse: Configuring as mouse
+[    25.855] (II) evdev: G-SPY USB Gaming Mouse: Configuring as keyboard
+[    25.855] (II) evdev: G-SPY USB Gaming Mouse: Adding scrollwheel support
+[    25.855] (**) evdev: G-SPY USB Gaming Mouse: YAxisMapping: buttons 4 and 5
+[    25.855] (**) evdev: G-SPY USB Gaming Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[    25.855] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:04.0/0000:02:00.0/usb8/8-2/8-2:1.1/0003:04D9:A070.0005/input/input17/event17"
+[    25.855] (II) XINPUT: Adding extended input device "G-SPY USB Gaming Mouse" (type: KEYBOARD, id 11)
+[    25.855] (**) Option "xkb_rules" "evdev"
+[    25.855] (II) evdev: G-SPY USB Gaming Mouse: initialized for relative axes.
+[    25.855] (WW) evdev: G-SPY USB Gaming Mouse: ignoring absolute axes.
+[    25.856] (**) G-SPY USB Gaming Mouse: (accel) keeping acceleration scheme 1
+[    25.856] (**) G-SPY USB Gaming Mouse: (accel) acceleration profile 0
+[    25.856] (**) G-SPY USB Gaming Mouse: (accel) acceleration factor: 2.000
+[    25.856] (**) G-SPY USB Gaming Mouse: (accel) acceleration threshold: 4
+[    25.856] (II) config/udev: Adding input device G-SPY USB Gaming Mouse (/dev/input/mouse0)
+[    25.856] (II) No input driver specified, ignoring this device.
+[    25.856] (II) This device may have been added with another device file.
+[    25.856] (II) config/udev: Adding input device HDA ATI SB Front Mic (/dev/input/event2)
+[    25.856] (II) No input driver specified, ignoring this device.
+[    25.856] (II) This device may have been added with another device file.
+[    25.856] (II) config/udev: Adding input device HDA ATI SB Rear Mic (/dev/input/event3)
+[    25.856] (II) No input driver specified, ignoring this device.
+[    25.856] (II) This device may have been added with another device file.
+[    25.856] (II) config/udev: Adding input device HDA ATI SB Line (/dev/input/event4)
+[    25.856] (II) No input driver specified, ignoring this device.
+[    25.856] (II) This device may have been added with another device file.
+[    25.856] (II) config/udev: Adding input device HDA ATI SB Line Out Front (/dev/input/event5)
+[    25.856] (II) No input driver specified, ignoring this device.
+[    25.856] (II) This device may have been added with another device file.
+[    25.857] (II) config/udev: Adding input device HDA ATI SB Line Out Surround (/dev/input/event6)
+[    25.857] (II) No input driver specified, ignoring this device.
+[    25.857] (II) This device may have been added with another device file.
+[    25.857] (II) config/udev: Adding input device HDA ATI SB Line Out CLFE (/dev/input/event7)
+[    25.857] (II) No input driver specified, ignoring this device.
+[    25.857] (II) This device may have been added with another device file.
+[    25.857] (II) config/udev: Adding input device HDA ATI SB Line Out Side (/dev/input/event8)
+[    25.857] (II) No input driver specified, ignoring this device.
+[    25.857] (II) This device may have been added with another device file.
+[    25.857] (II) config/udev: Adding input device HDA ATI SB Front Headphone (/dev/input/event9)
+[    25.857] (II) No input driver specified, ignoring this device.
+[    25.857] (II) This device may have been added with another device file.
